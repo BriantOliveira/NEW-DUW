@@ -1,0 +1,47 @@
+<div class="row">
+        <div class="row">
+            <div class="input-field col s4 m6" style="width: 19.333333%; margin-left: 43px;">
+                <select class="icons" name ="category">
+                    <option value="" disabled selected>Choose category</option>
+                    <option value="Technology">Technology</option>
+                    <option value="Daily Motivation">Daily Motivation</option>
+                    <option value="Science">Science</option>
+                    <option value="Politics">Politics</option>
+                    <option value="Art">Art</option>
+                    <option value="Fetish">Fetish</option>
+                    <option value="Music">Music</option>
+                    <option value="Fashion<">Fashion</option>
+                    <option value="Animals">Animals</option>
+                    <option value="Cook">Cook</option>
+                </select>
+            </div>
+
+            <div class="row">
+                <div class="input-field col s5" style="clear:both">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="icon_prefix" type="text" name="articleName" class="validate" value="{{article.articleName}}">
+                    <label for="icon_prefix">Article Name</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s5" style="clear:both">
+                            <i class="material-icons prefix">mode_edit</i>
+                            <textarea id="icon_prefix2" name="content" class="materialize-textarea">{{article.content}}</textarea>
+                            <label for="icon_prefix2">Write your article</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <button class="btn waves-effect waves-light" type="submit">Submit
+                <i class="material-icons right">send</i>
+            </button>
+            <button class="btn waves-effect waves-light" type="cancel" name="cancel" style="background-color: #c62828;">Cancel
+                <i class="material-icons right">clear</i>
+            </button>
+
+        </div>
+</div>
